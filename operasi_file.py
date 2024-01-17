@@ -1,0 +1,13 @@
+print("SELAMAT DATANG DI PESAN RAHASIA")
+print("*******************************")
+file_pesan = (open("pesan.txt","r+"))
+teks = file_pesan.read()
+print (teks)
+
+nama = input("Nama : ")
+pesan = input("Pesan : ")
+harapan = input("Harapan : ")
+text = "\nNama : {}\nPesan : {}\nHarapan : {}\n".format(nama, pesan, harapan)
+file_pesan.write(text)
+file_pesan.close()
+print("******************************")
